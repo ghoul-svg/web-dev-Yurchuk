@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: lightsteelblue ;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 405px; /* changed */
+  background: rgb(201, 209, 221);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding:300;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  width: 70%;
+  background-color: whitesmoke;
+  height: 1300px; /* changed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: gainsboro;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(51, 45, 51);
+}
+
+
+dt {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+dd {
+  font-size: 1.1em;
+  padding-bottom: 3%;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Lab 1 (Yurchuk Anastasiya 353)</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#first">When HTML5 has become a standard? What were the main reasons for developing new standard?</a></li><br>
+      <li><a href="#second">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</a></li><br>
+      <li><a href="#third">What is the minimal HTML page code?</a></li><br>
+      <li><a href="#fourth">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</a></li><br>
+      <li><a href="#fifth">How you can check browser support for particular tag or attribute? </a></li><br>
+      <li><a href="#sixth">How you can check browser support for particular tag or attribute? </a></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <dl>
+    <dt id="first">When HTML5 has become a standard? What were the main reasons for developing new standard? </dt>
+    <dd>HTML5 became a standard on October 28, 2014.</dd>
+
+    <dt id="second">What is a difference between W3C HTML5 and WHATWG HTML Living Standard? </dt>
+    <dd>The main difference between W3C's HTML5 and WHATWG's HTML Living Standard is that the latter is a continuously updated version that reflects ongoing work, while the former was a specific version frozen in time when it was officially standardized.</dd>
+
+    <dt id="third">What is the minimal HTML page code? </dt>
+    <dd>The minimal HTML page code is the smallest possible HTML document that still validates as HTML5.</dd>
+    
+    <dt id="fourth">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+    <dd>Semantic markup focuses on the meaning and structure of the content, while presentational markup is focused on the appearance. Presentational markup is considered deprecated because it mixes content with style, making the content less accessible, maintainable, and adaptable across different devices.</dd>
+    <dd>Presentational markup, which involves using HTML tags to directly style elements on a webpage, is considered deprecated now because it goes against the principles of separation of concerns and best practices for modern web development.</dd>
+    
+    <dt id="fifth">How you can check browser support for particular tag or attribute? </dt>
+    <dd>You can check browser support for a particular HTML tag or attribute by using caniuse.com or Mozilla Developer Network (MDN) web documentation.</dd>
+
+    <dt id="sixth">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
+    <dd>The officially supported audio and video formats in HTML standard are:
+      <br>Audio: MP3, OGG, WAV<br>Video: MP4, WebM, OGG<br><p>If you use other formats that are not officially supported by HTML, the video or audio may not play or may encounter compatibility issues across different browsers and devices. It's recommended to use the officially supported formats for better cross-browser compatibility.</p>
+  
+      <video width="400" controls>
+        <source src="c:\Users\Admin\Desktop\nastyas property\night japan.webm" type="video/mp4">
+        <source src="c:\Users\Admin\Desktop\nastyas property\night japan.webm" type="video/ogg">
+      </video>
+      <p>
+        Video courtesy of 
+        <a href="https://www.shutterstock.com/video/clip-1063196449-shinjuku-tokyo-japan--view-street-sign" target="_blank">Shutterstock</a>.
+        </p>
+        <audio width="400" controls>
+          <source src="c:\Users\Admin\Downloads\ADTurnUp_-_palace_75313123.mp3" type="ADTurnUp_-_palace_75313123">
+          <source src="c:\Users\Admin\Downloads\ADTurnUp_-_palace_75313123.mp3" type="audio/ogg">
+        </audio>
+        <p>
+          Audio courtesy of 
+          <a href="https://eu.hitmotop.com/song/75313123" target="_blank">Hitmotop</a>.
+          </p>
+  
+
+     
+  </article>
+</section>
+
+<footer>
+  <p>In the very beginning of this work I had some difficulties with making a document and starting working with the code itself,
+    but then every detail was explained to me so further there were no troubles with the lab. I learned how to change the whole appearance of a website 
+    and how to add videos and audios to it</p>
+  <img src="c:\Users\Admin\Desktop\nastyas property\logo.jpg" alt="logo" width="200" height="150">
+</footer>
+
+</body>
+</html>
