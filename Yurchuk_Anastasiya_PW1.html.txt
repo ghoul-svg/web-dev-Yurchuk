@@ -97,7 +97,7 @@ dd {
       <li><a href="#third">What is the minimal HTML page code?</a></li><br>
       <li><a href="#fourth">Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</a></li><br>
       <li><a href="#fifth">How you can check browser support for particular tag or attribute? </a></li><br>
-      <li><a href="#sixth">How you can check browser support for particular tag or attribute? </a></li><br>
+      <li><a href="#sixth">What are the audio and video formats, officially supported by HTML standard? What happens if you use other format? </a></li><br>
     </ul>
   </nav>
   
